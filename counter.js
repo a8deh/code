@@ -8,10 +8,7 @@ var createCounter = function(init) {
         increment : ()=>{ return (++count)},
         decrement : ()=>{ return (--count) },
         reset : ()=>{ count= init ;return count}
-
-    }
-  
-    
+    }    
 };
 
 /**
