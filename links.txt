@@ -1,1 +1,10 @@
-https://mega.nz/folder/om0wTYxb#-Co9MdAPeUacTdt0aTb9Dw
+import undetected_chromedriver as uc
+from selenium import webdriver
+
+options = webdriver.ChromeOptions() 
+options.headless = True
+driver = uc.Chrome(options=options)
+driver.get('https://datadome.co/customers-stories/toppreise-ends-web-scraping-and-content-theft-with-datadome/')
+driver.save_screenshot('datadome_undetected_webddriver.png')
+driver.quit()
+print("Program Ended")
